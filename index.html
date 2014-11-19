@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi index</title>
+    <link rel="stylesheet" href="bjqs.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/bjqs-1.3.min.js"></script>
+</head>
+<body>
+     <header class="header">
+        <h1>Prueba HTML</h1>
+        <p>Test HTML</p>
+    </header>
+     <!--Fin Header-->
+      <div id='cssmenu'>
+      <ul>
+         <li class='active'><a href='index.html'>Inicio</a></li>
+         <li class='has-sub '><a href='#'>Products</a>
+            <ul>
+               <li class='has-sub '><a href='#'>Edicion</a>
+                  <ul>
+                     <li><a href='#'>Item</a></li>
+                     <li><a href='#'>Item</a></li>
+                  </ul>
+               </li>
+               <li class='has-sub '><a href='#'>Ver</a>
+                  <ul>
+                     <li><a href='#'>Item</a></li>
+                     <li><a href='#'>Item</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+         <li><a href='#'>Acerca de</a></li>
+         <li><a href='#'>Contacto</a></li>
+      </ul>
+    </div>
+    
+    
+    <!--inicio Carrusel-->    
+     <div id="container">
+  
+      <h2>Carrusel</h2>
+      
+      <div id="banner-fade">
+
+        <!-- Deslizador jquey -->
+        <ul class="bjqs">
+          <li><img src="Img/3D31AA32B.jpg" title="Primera imagen"></li>
+          <li><img src="Img/Paisaje%20extraordinario%20II.jpg" title="Segunda imagen"></li>
+          <li><img src="Img/paisajes-hermosos-francia-naturales-imagenes-fotos-fondos-pantalla-wallpaper-hd-escritorio-3.jpg" title="Tercera imagen"></li>
+        </ul>
+        <!-- Fin Deslizador jquey -->
+
+      </div>
+      <!-- Fin Banner -->
+
+      <script>
+        jQuery(document).ready(function($) {
+
+          $('#banner-fade').bjqs({
+            height      : 720,
+            width       : 1280,
+            responsive  : true
+          });
+
+        });
+      </script>
+    </div>
+     <script src="js/libs/jquery.secret-source.min.js"></script>
+
+    <script>
+    jQuery(function($) {
+
+        $('.secret-source').secretSource({
+            includeTag: false
+        });
+
+    });
+    </script>
+    
+    <footer class="footer">
+        <ul>
+         <li>copyright</li>
+         <li>sitemap</li>
+         <li>contact</li>
+         <li>to top</li>
+      </ul>
+    </footer>
+</body>
+</html>
